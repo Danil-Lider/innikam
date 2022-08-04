@@ -1,6 +1,10 @@
 "use strict";
 
 $(document).ready(function () {
+  $(document).on('click', '.item-two .item-btn-bottom', function (e) {
+    e.preventDefault();
+    $(".modal-question").show();
+  });
   $(document).on('click', '.detail-link', function (e) {
     e.preventDefault();
     $(".modal-news").show();

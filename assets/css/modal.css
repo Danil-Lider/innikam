@@ -68,8 +68,8 @@ input, textarea {
   .modal__close {
       cursor: pointer;
       position: absolute;
-      right: 1.25rem;
-      top: 1.25rem;
+      right: -2.25rem;
+      top: -2.25rem;
   }
   
   .modal__title {

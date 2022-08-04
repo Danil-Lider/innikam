@@ -256,8 +256,9 @@ header {
 // ITEMS - NUM  
 
 .items-num {    
-    margin-top: 62px;
-    margin-bottom: 64px;
+    padding-top: 62px;
+    padding-bottom: 64px;
+    background-color: white;
     .wrapper {
         display: flex;
         justify-content: space-between;
@@ -534,6 +535,7 @@ header {
 // PARTNERS
 
 .partners {
+    background-color: white;
     padding-bottom: 100px;  
     .headers-titles {
         padding-top: 100px;
@@ -1846,3 +1848,74 @@ footer {
         }
     }
 } 
+
+
+// modal-question
+
+.modal-question {
+    overflow: auto;
+    .modal-dialog {
+        margin-top: 7rem;
+        max-width: 50.875rem;
+        .modal-content {
+            padding: 0;
+            .btn {
+                width: 160px;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 30px;
+                /* identical to box height, or 150% */  
+                color: #078AD1;
+                background: #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 60px;
+                padding: 0;
+                font-family: 'Inter';
+                font-style: normal;
+                margin-left: auto;
+                box-sizing: border-box;
+                letter-spacing: inherit;
+            }
+        }
+    }
+    .item-two {
+        width: 104%;
+        margin-left: -2%;
+        margin-top: 0;
+    }
+    .modal__fields {
+        background: #078AD1;
+        padding: 60px 60px 60px 60px;
+    }
+    .modal-content input, textarea {
+        margin-top: 20px;
+        padding-left: 25px;
+        padding-top: 15px;
+        background: linear-gradient(0deg, #F2F6FB, #F2F6FB), #F2F6FB;
+        border-radius: 12px;
+    }
+    .form__label div {
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .modal__btn {
+        display: flex;
+        align-items: center;
+    }
+    .soglasie {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        width: 70%;
+        color: #FFFFFF;
+        a {
+            color: #FFCB00;
+        }
+    }
+}
