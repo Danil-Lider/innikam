@@ -1,3 +1,7 @@
+.grey {
+  color: #9B9B9B;
+}
+
 .btn {
   background: #F1F1F1;
   border-radius: 6px;
@@ -45,6 +49,7 @@ a {
 
 body {
   font-family: "Inter", sans-serif;
+  background: #F5F5F5;
 }
 
 .w100 {
@@ -613,10 +618,18 @@ footer .footer-bottom .right {
   width: 375px;
 }
 
+.block-with-image {
+  background-color: white;
+}
 .block-with-image .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.block-with-image .btn {
+  width: 104px;
+  font-size: 14px;
+  height: 40px;
 }
 .block-with-image .left {
   max-width: 830px;
@@ -1425,6 +1438,35 @@ footer .footer-bottom .right {
   padding: 3px 9px;
 }
 
+.item-two {
+  margin-right: 20px;
+  margin-left: 0;
+  display: flex;
+  margin-top: 20px;
+  width: 49%;
+}
+.item-two:nth-child(2n) {
+  margin-right: 0;
+}
+.item-two .item-image {
+  margin-right: 60px;
+}
+.item-two .item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+}
+.item-two .item-text {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.item-two .item-left {
+  width: 70%;
+}
+.item-two .item-right {
+  width: 50%;
+}
+
 .contacts-bottom {
   margin-top: 100px;
   padding-bottom: 100px;
@@ -1433,31 +1475,24 @@ footer .footer-bottom .right {
   display: flex;
   flex-wrap: wrap;
 }
-.contacts-bottom .item-two {
-  margin-right: 20px;
-  margin-left: 0;
-  display: flex;
-  margin-top: 20px;
-  width: 49%;
+
+.claster-11-page .supptort_item-inner {
+  margin-top: 0;
 }
-.contacts-bottom .item-two:nth-child(2n) {
-  margin-right: 0;
+.claster-11-page .support__item {
+  margin-top: 40px;
 }
-.contacts-bottom .item-image {
-  margin-right: 60px;
+.claster-11-page .support__item-head-custom {
+  width: 100%;
 }
-.contacts-bottom .item-title {
-  font-weight: 700;
+.claster-11-page .support__item-head-custom .grey {
+  font-weight: 400;
   font-size: 24px;
   line-height: 34px;
+  margin-top: 87px;
 }
-.contacts-bottom .item-text {
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-.contacts-bottom .item-left {
-  width: 70%;
-}
-.contacts-bottom .item-right {
-  width: 50%;
+.claster-11-page .support__item-head-custom .title {
+  font-size: 24px;
+  line-height: 34px;
+  margin-top: 60px;
 }

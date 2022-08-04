@@ -2,6 +2,11 @@ $black:black;
 $green:green;
 $red:red;
 $blue:#078AD1;
+$grey:#9B9B9B;
+
+.grey {
+    color: $grey;
+}
 
 .btn {
     background: #F1F1F1;
@@ -51,6 +56,7 @@ a {
 
 body {
     font-family: 'Inter', sans-serif;
+    background: #F5F5F5;
 }
 
 
@@ -746,6 +752,7 @@ footer {
 // block-with-image
 
 .block-with-image {
+    background-color: white;
     .container {
     }
     .wrapper {
@@ -753,6 +760,13 @@ footer {
         justify-content: space-between;
         align-items: center;
     }
+    
+    .btn {
+        width: 104px;
+        font-size: 14px;
+        height: 40px;
+    }
+
     .left {
         max-width: 830px;
         // padding-top: 100px;
@@ -1700,24 +1714,14 @@ footer {
     }
 }
 
-// СТРАНИЦА КОНТАКТО НИЗ
-
-.contacts-bottom{
-    margin-top: 100px;
-    padding-bottom: 100px;
-    .wrapper {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .item-two {
-        margin-right: 20px;
-        margin-left: 0;
-        display: flex;
-        margin-top: 20px;
-        width: 49%;
-        &:nth-child(2n){
-            margin-right: 0;
-        }
+.item-two {
+    margin-right: 20px;
+    margin-left: 0;
+    display: flex;
+    margin-top: 20px;
+    width: 49%;
+    &:nth-child(2n){
+        margin-right: 0;
     }
     .item-image {
         margin-right: 60px;
@@ -1737,5 +1741,42 @@ footer {
     .item-right {
         width: 50%;
     }
+    
+}
+
+// СТРАНИЦА КОНТАКТО НИЗ
+
+.contacts-bottom{
+    margin-top: 100px;
+    padding-bottom: 100px;
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
     
+
+// claster-11-page
+
+.claster-11-page {
+    .supptort_item-inner {
+        margin-top: 0;
+    }
+    .support__item {
+        margin-top: 40px;
+    }
+    .support__item-head-custom {
+        width: 100%;
+        .grey {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 34px;
+            margin-top: 87px;
+        }
+        .title {
+            font-size: 24px;
+            line-height: 34px;
+            margin-top: 60px;
+        }
+    }
+}
