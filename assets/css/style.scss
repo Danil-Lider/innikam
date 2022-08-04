@@ -3,6 +3,21 @@ $green:green;
 $red:red;
 $blue:#078AD1;
 
+.btn {
+    background: #F1F1F1;
+    border-radius: 6px;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    color: #078AD1;
+    margin-top: 48px;
+}
 
 body, html {
     overflow-x: hidden;
@@ -180,7 +195,7 @@ ol, ul {
     padding-top: 85px;
     padding-bottom: 90px;
     background-size: cover;
-
+    height: 559px;
     .title {
         width: 33%;
         color: white;
@@ -503,7 +518,7 @@ ol, ul {
 // PARTNERS
 
 .partners {
-    padding-bottom: 100px;  
+    // padding-bottom: 100px;  
     .headers-titles {
         padding-top: 100px;
     }
@@ -569,6 +584,7 @@ ol, ul {
 // FOOTER
 
 footer {
+    margin-top: 100px;
     .footer-top {
         background: #2361AC;
         padding-top: 60px;
@@ -1355,3 +1371,161 @@ footer {
         margin-right: 44px;
     }
 }
+
+
+// claster-6-page
+
+.claster-6-page {
+    .supptort_item-inner a {
+        color: black;
+    }
+    .supptort_item-inner a::before {
+        content: url(../images/claster-6-page/support-methods/icon.png);
+    }
+}
+
+.header-services-buttons {
+    .Our-support-methods {
+        padding-top: 0;
+    }
+    .wrapper-section {
+        display: flex;
+    
+    }
+
+    .item-btn-check{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        color: #9B9B9B;
+        cursor: pointer;
+        &:first-child {
+            margin-right: 100px;
+        }
+        &.active {
+            color: black;
+            border-bottom:6px solid #FFA945;
+            padding-bottom: 20px;
+        }
+    }
+
+}
+
+
+// ЗАЯВКА НА УСЛУГУ ФУТЕР
+
+.request-block {
+    background: #F5F5F5;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .item {
+        width: 50%;
+        height: 272px;
+        display: flex;
+        overflow: hidden;
+        &:first-child {
+            background: radial-gradient(208.95% 187.1% at 0% 100%, #FFBF78 0%, #FF8524 100%);
+            border-radius: 20px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .item-left {
+        max-width: 405px;
+    }
+    .item-right {
+    }
+    .item-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 34px;
+        color: #FFFFFF;
+        margin-top: 30px;
+    }
+    .item-text {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        /* or 188% */
+        color: #FFFFFF;
+        a {
+            color: #FFEB00;
+        }
+    }
+    .item-btn {
+        background: #FFFFFF;
+        box-shadow: inset 0px -4px 0px rgba(255, 255, 255, 0.8), inset 0px 10px 30px #FFFFFF;
+        border-radius: 6px;
+        width: 200px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        /* identical to box height, or 150% */
+        color: #078AD1;
+        margin-top: 48px;
+    }
+    .item-two {
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(5px);
+        border-radius: 20px;
+        padding: 30px;
+        color: black;
+        margin-left: 20px;
+        .item-block {
+            display: flex;
+            flex-direction: column;
+        }
+        .item-title {
+           color: black;
+           margin-top: 0;
+        }
+        .item-text {
+            color: black;
+        }
+        .item-left {
+            display: flex;
+        }
+        .number {
+            margin-top: auto;
+        }
+        .item-right {
+            display: flex;
+            flex-direction: column;
+        }
+        .item-btn-bottom {
+            margin-top: auto;
+            width: 90px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 30px;
+            height: 40px;
+            margin-left: auto;
+        }
+        .item-top {
+            background: #078AD1;
+            border-radius: 6px;
+            color: white;
+            padding: 3px 9px;
+        }
+    }
+    .item-image {
+        margin-right: 60px;
+        img {
+            width: initial;
+        }
+    }
+    
+    .item-btn-bottom {
+    }
+}
+
