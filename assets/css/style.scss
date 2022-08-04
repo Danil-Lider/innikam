@@ -1158,7 +1158,7 @@ footer {
         text-align: center;
         color: #4E4E4E;
         margin: 0 auto;
-        margin-top: 60px;
+        margin-top: 65px;
         width: 70%;
     }
     .wrapper {
@@ -1172,5 +1172,186 @@ footer {
         
     }
     .item {
+    }
+}
+
+
+// ЯКОРНЫЕ ПРЕДПРИЯТИЯ 
+
+.anchor-companies {
+    margin-top: 120px;
+    .container {
+    }
+    .title-line {
+    }
+    .line {
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-around ;
+        width: 80%;
+        margin:0 auto;
+        margin-top: 25px;
+    }
+    .left {
+    }
+    .item {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        margin-top: 55px;
+
+    }
+    .item-left {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF; 
+        background: #FE2607;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-right: 45px;
+    }
+    .item-right {
+        max-width: 512px;
+    }
+    .item-title {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 34px;
+        text-transform: uppercase;
+        color: #4E4E4E;
+    }
+    .item-text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #4E4E4E;
+
+    }
+    .right {
+    }
+    .right-image {
+    }
+    .right-text {
+        display: flex;
+        margin-top: 60px; 
+        margin-left: 7rem;
+        div:first-child {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 34px;
+            text-transform: uppercase;
+            color: #4E4E4E;
+            max-width: 277px;
+        }
+        div:last-child {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 70px;
+            line-height: 30px;
+            /* identical to box height, or 43% */
+            display: flex;
+            align-items: center;
+            color: $blue;
+            margin-top: 5rem;
+            margin-left: 3rem;
+
+        }
+        span {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 34px;
+            /* identical to box height, or 113% */
+            text-transform: uppercase;
+            color: #078AD1;
+            margin-top: 1rem;
+        }
+    }
+}
+
+
+// ОБРАЗОВАТЕЛЬНЫЕ ОРГАНИЗАЦИИ
+
+.educational-organizations {
+    .title-line {
+        margin-top: 125px;
+    }
+    .item {
+        max-width: 276px;
+    }
+}
+
+// ИННОВАЦИОННАЯ И ПРОИЗВОДСТВЕННАЯ ИНФРАСТРУКТУРА
+
+.Innovation-and-production-infrastructure {
+    margin-bottom: 75px;
+    .title-line {
+        margin-top: 125px;
+    }
+    .items-with-image {
+        margin-top: 0;
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .item {
+        margin-top: 60px;
+        .text {
+            max-width: 277px;
+        }
+    }
+    .text-bottom {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 54px;
+        .text {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 34px;
+            text-transform: uppercase;
+            color: #078AD1;
+            max-width: 385px;
+        }
+    }
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 9px;
+    }
+    .big-num {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 90px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        color: #078AD1;
+        margin-right: 44px;
     }
 }
