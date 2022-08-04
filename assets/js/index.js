@@ -5,7 +5,7 @@ items.forEach(element => {
 
     element.addEventListener( "click" , function(e){
 
-        items.forEach(el => {console.log(el.classList.remove('active'))});
+        items.forEach(el => {console.log(el.classList.remove('active'))});   
         element.classList.add('active')
 
         var active_id = this.getAttribute('data-block_id')
