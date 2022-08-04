@@ -1496,3 +1496,65 @@ footer .footer-bottom .right {
   line-height: 34px;
   margin-top: 60px;
 }
+
+.modal-news {
+  overflow: auto;
+}
+.modal-news .modal-dialog .modal-content {
+  padding: 0;
+  background: inherit;
+}
+.modal-news .modal-dialog {
+  max-width: 51.875rem;
+  margin-top: 7rem;
+}
+.modal-news .modal__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #FFFFFF;
+  background: #078AD1;
+  padding-top: 60px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 27px;
+  margin-bottom: 0;
+  border-radius: 20px 20px 0px 0px;
+}
+.modal-news .text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 40px;
+  margin-top: 0;
+  background: white;
+  border-radius: 0px 0px 20px 20px;
+}
+.modal-news .date {
+  margin-top: 40px;
+}
+.modal-news .news {
+  padding-bottom: 0;
+  background: inherit;
+}
+.modal-news .documents {
+  padding: 0;
+  background: inherit;
+}
+.modal-news .documents .item {
+  width: 100%;
+  height: initial;
+  margin-top: 10px;
+  background: #FFFFFF;
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  align-items: center;
+}
+.modal-news .documents .download {
+  width: 90px;
+  height: 50px;
+}
