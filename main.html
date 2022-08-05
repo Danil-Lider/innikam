@@ -26,8 +26,8 @@
 </head>
 <body>
 
-    <header>
-        <div class="container">
+    <header class="">
+        <div class="container ">
             <div class="header">
                 <div class="header-left">
                     <a href="/" class="logo">
@@ -82,7 +82,7 @@
         </div>
     </header>
 
-    <section class="main-block" style="height: inherit;">
+    <section class="main-block anim1" style="height: inherit;">
         <div class="container">
             <div class="text-block">
                 <div class="title">Центр кластерного развития 
@@ -122,7 +122,7 @@
         </div>
     </section>
     
-    <section class="items-num">
+    <section class="items-num anim1">
         <div class="container">
             <div class="wrapper">
                 <div class="item-num">
@@ -149,7 +149,7 @@
         </div>
     </section>
 
-    <section class="Our-support-methods">
+    <section class="Our-support-methods anim2">
         <div class="container">
             <div class="title">Наши меры поддержки</div>
             <div class="wrapper">
@@ -261,7 +261,7 @@
         </div>
     </section>
 
-    <section style="background-image: url(assets/images/map/map.png);" class="map">
+    <section style="background-image: url(assets/images/map/map.png);" class="map anim3">
         <div class="container">
             <div class="wrapper">
                 <div class="map-left">
@@ -312,7 +312,7 @@
         </div>
     </section>
 
-    <section class="news">
+    <section class="news anim4">
         <div class="container">
             <div class="headers-titles">
                 <div class="title">Новости</div>
@@ -362,7 +362,7 @@
         </div>
     </section>
 
-    <section class="partners">
+    <section class="partners anim5">
         <div class="container">
             <div class="headers-titles">
                 <div class="title">Партнеры</div>
@@ -406,7 +406,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="anim6">
         <div class="footer-top">
            <div class="container">
                 <div class="footer-wrapper">
@@ -484,6 +484,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script src="assets/js/skroll.js" type="text/javascript"></script>
+
     <script>
         var swiper = new Swiper(".mySwiper", {
         loop:true,
@@ -493,6 +496,70 @@
             prevEl: ".swiper-button-prev",
           },
         });
+
+        var skroll = new Skroll()
+           .add(".header-1",{
+                   animation:"zoomIn",
+                   duration:600
+           })
+           .add(".anim1",{
+                   animation:"fadeInUp",
+                   delay:120,
+                   duration:600,
+                   wait:250
+           })
+           .add(".anim2",{
+                   animation:"flipInX",
+                   delay:120,
+                   duration:750
+           })
+           .add(".anim3",{
+                   animation:"rotateLeftIn",
+                   delay:100,
+                   duration:750
+           })
+           .add(".anim4",{
+                   animation:"slideInLeft",
+                   delay:80,
+                   duration:800
+           })
+           .add(".anim5",{
+                   animation:"growInLeft",
+                   delay:80,
+                   duration:500,
+                   easing:"cubic-bezier(0.37, 0.27, 0.24, 1.26)"
+           })
+           .add(".anim6",{
+                   animation:"growInRight",
+                   delay:80,
+                   duration:500,
+                   easing:"cubic-bezier(0.37, 0.27, 0.24, 1.26)",
+           })
+           .addAnimation("spinIn",{
+                   start:function(el){
+                     el.style["transform"] = "rotate(-360deg) scale(.2,.2)";
+                     el.style["transform-origin"] ="50% 50%";
+                     el.style["opacity"] = 0;
+              },
+              end:function(el){
+                  el.style["transform"] = "rotate(0deg) scale(1,1)";
+                  el.style["opacity"] = 1;
+              }
+           })
+           .add(".anim7",{
+                   animation:"spinIn",
+                   delay:80,
+                   duration:500,
+                   easing:"cubic-bezier(0.37, 0.27, 0.24, 1.26)"
+           })
+           .add(".anim8",{
+                   animation:"fadeInDown",
+                   delay:75,
+                   duration:150,
+                   triggerBottom:1,
+                   easing:"cubic-bezier(0.37, 0.27, 0.24, 1.26)"
+           })
+           .init();
     </script>
     <script src="assets/js/custom-select.min.js" type="text/javascript"></script>
     <script src="assets/js/index.js" type="text/javascript"></script>
