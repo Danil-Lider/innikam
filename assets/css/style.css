@@ -245,7 +245,7 @@ header {
 }
 
 .Our-support-methods {
-  background: #F2F6FB;
+  background: #F5F5F5;
   padding-top: 130px;
   padding-bottom: 134px;
 }
@@ -1263,6 +1263,7 @@ footer .footer-bottom .right {
   margin-top: 48px;
 }
 .request-block .item-two {
+  margin-top: 0;
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(5px);
   border-radius: 20px;
@@ -1396,7 +1397,7 @@ footer .footer-bottom .right {
   width: 75%;
 }
 .item-two {
-  background: rgba(255, 255, 255, 0.9);
+  background-color: white;
   backdrop-filter: blur(5px);
   border-radius: 20px;
   padding: 30px;
@@ -1470,8 +1471,9 @@ footer .footer-bottom .right {
 }
 
 .contacts-bottom {
-  margin-top: 100px;
+  padding-top: 100px;
   padding-bottom: 100px;
+  background-color: #f5f5f5;
 }
 .contacts-bottom .wrapper {
   display: flex;
